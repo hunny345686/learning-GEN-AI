@@ -1,15 +1,15 @@
 {
-  "name": "day1",
+  "name": "day2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "dev": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
     "@types/node": "^25.3.3",
     "dotenv": "^17.3.1",
