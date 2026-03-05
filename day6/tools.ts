@@ -1,7 +1,7 @@
-import { hybridRetrieve } from "hybridRetrieve";
+import { hybridSearch } from "./hybridRetriever.ts";
 
 export const tool = {
   searchDocs: async (query: string) => {
-    return await hybridRetrieve(query);
+    return await hybridSearch(query);
   },
 };

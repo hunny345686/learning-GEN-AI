@@ -1,0 +1,58 @@
+[33mcommit 390fb412609ba992f0a12f513dc803d45516572b[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: ipremsingh <prem.singh@oodlestechnologies.com>
+Date:   Wed Mar 4 11:32:02 2026 +0530
+
+    feat: setup core retrieval infrastructure
+    
+    - Added centralized client configuration
+    - Implemented OpenAI embedding helper
+    - Built Pinecone vector search integration
+    - Created hybrid retrieval system (vector + keyword)
+    - Added deduplication and topK control
+
+[33mcommit d1c8e210350930e757f830885631399f1998e869[m
+Author: ipremsingh <prem.singh@oodlestechnologies.com>
+Date:   Tue Mar 3 07:57:04 2026 +0530
+
+    Learning - migrate from in-memory vector search to Pinecone
+    
+    - Integrated OpenAI embeddings (text-embedding-3-small)
+    - Setup Pinecone cloud vector database (cosine metric, 1536 dim)
+    - Implemented document ingestion with metadata
+    - Implemented similarity search using ANN
+    - Added query pipeline structure
+    - Prepared base architecture for RAG implementation
+
+[33mcommit 1ef58998ae515a2cfb3d83ed7e4a852a505b3f86[m
+Author: ipremsingh <prem.singh@oodlestechnologies.com>
+Date:   Tue Mar 3 06:56:31 2026 +0530
+
+    Learning About chunking HOW RAG is importent good chuking and bad chunking
+
+[33mcommit 26651c9adc0ac76da27b84073a5883488483abdc[m
+Author: ipremsingh <prem.singh@oodlestechnologies.com>
+Date:   Sun Mar 1 20:10:42 2026 +0530
+
+    Learn about Document indexing
+    ✔ Embedding storage
+    ✔ Similarity search
+    ✔ Context injection
+    ✔ Grounded generation
+
+[33mcommit 87d3eb053d363e4425a3603e2f84d12546b42bbb[m
+Author: ipremsingh <prem.singh@oodlestechnologies.com>
+Date:   Sun Mar 1 15:17:41 2026 +0530
+
+    feat: implement in-memory semantic search using OpenAI embeddings and cosine similarity
+
+[33mcommit a190fb46eefdd7f4ce2e2f9f817ee370e5daeb2f[m
+Author: ipremsingh <prem.singh@oodlestechnologies.com>
+Date:   Sun Mar 1 14:37:48 2026 +0530
+
+    Learnig AI - initial code start with noral chat app
+
+[33mcommit 4c796ee6b134c4850171705211c45cfb31265b67[m
+Author: ipremsingh <prem.singh@oodlestechnologies.com>
+Date:   Sun Mar 1 14:22:03 2026 +0530
+
+    Learnig AI - About LLM Tokens , Context window , Halucination

@@ -1,5 +1,5 @@
-import { index } from "../lib/client";
-import { createEmbeddingd } from "../lib/embedding";
+import { index } from "../lib/client.ts";
+import { createEmbeddingd } from "../lib/embedding.ts";
 
 const localDocuments = [
   { id: "1", text: "React is a frontend library" },
@@ -22,12 +22,12 @@ function keywordSearch(query: string) {
  * -Vector Search using Pinecone
  */
 async function vectorSearch(query: string) {
-  const embedding = createEmbeddingd(query);
+  const embedding = await createEmbeddingd(query);
 
   const results = await index.query({
-    vector: embedding,
     topK: 5,
     includeMetadata: true,
+    vector: embedding,
   });
 
   return results.matches?.map((match) => match.metadata?.text as string) || [];

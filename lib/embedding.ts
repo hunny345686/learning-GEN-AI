@@ -1,4 +1,4 @@
-import { client } from "./client";
+import { client } from "./client.ts";
 
 export async function createEmbeddingd(text: string) {
   const res = await client.embeddings.create({

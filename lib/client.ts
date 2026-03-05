@@ -1,8 +1,12 @@
+import path from "path";
+import { fileURLToPath } from "url";
 import dotenv from "dotenv";
 import OpenAI from "openai";
 import { Pinecone } from "@pinecone-database/pinecone";
 
-dotenv.config();
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+dotenv.config({ path: path.resolve(__dirname, "..", ".env") });
+
 /**
  * - Open AI client
  */
@@ -16,7 +20,7 @@ export const client = new OpenAI({
  */
 
 const pinecone = new Pinecone({
-  apiKey: process.env.PINECONE_API_KEY!,
+  apiKey: process.env.PINECONE_API_KEY as string,
 });
 
-export const index = pinecone.index(process.env.PINECONE_INDEX_NAME!);
+export const index = pinecone.index("genai-index");
